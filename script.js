@@ -64,24 +64,6 @@ anchorLinks.forEach((link) => {
   })
 })
 
-// Back to Top Button
-const backToTopButton = document.getElementById("backToTop")
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 500) {
-    backToTopButton.classList.add("visible")
-  } else {
-    backToTopButton.classList.remove("visible")
-  }
-})
-
-backToTopButton.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  })
-})
-
 // Header Shadow on Scroll
 const header = document.querySelector(".sticky-header")
 
