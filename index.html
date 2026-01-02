@@ -408,6 +408,47 @@
     <!-- Back to Top Button -->
     <button id="backToTop" class="back-to-top" aria-label="Wróć do góry">↑</button>
 
+    <!-- Chatbot Widget -->
+    <div id="chatbot-widget">
+        <button id="chatbot-toggle" class="chatbot-toggle" aria-label="Otwórz chat">
+            <span class="chat-icon">💬</span>
+            <span class="close-icon">✕</span>
+        </button>
+        
+        <div id="chatbot-window" class="chatbot-window">
+            <div class="chatbot-header">
+                <div class="chatbot-header-info">
+                    <span class="chatbot-avatar">✨</span>
+                    <div>
+                        <h3>Sprzątanie Na Błysk</h3>
+                        <p class="chatbot-status">Dostępni 24/7</p>
+                    </div>
+                </div>
+                <button id="chatbot-close" class="chatbot-close-btn" aria-label="Zamknij chat">✕</button>
+            </div>
+            
+            <div id="chatbot-messages" class="chatbot-messages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>Witamy! 👋 Jak możemy Ci dzisiaj pomóc?</p>
+                    </div>
+                </div>
+                <div class="quick-replies">
+                    <button class="quick-reply" data-message="Chcę poznać cennik">Cennik</button>
+                    <button class="quick-reply" data-message="Jakie usługi oferujecie?">Usługi</button>
+                    <button class="quick-reply" data-message="Chcę umówić termin">Umów termin</button>
+                </div>
+            </div>
+            
+            <div class="chatbot-footer">
+                <input type="text" id="chatbot-input" class="chatbot-input" placeholder="Napisz wiadomość..." />
+                <button id="chatbot-send" class="chatbot-send-btn" aria-label="Wyślij">
+                    <span>➤</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
